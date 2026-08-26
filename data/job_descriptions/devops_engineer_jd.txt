@@ -1,0 +1,16 @@
+Position: Senior DevOps Engineer
+Location: San Francisco, CA
+Company: CloudScale Solutions
+
+Job Description:
+We are seeking a DevOps Engineer with 4+ years of experience to automate cloud deployments and manage our container infrastructure.
+
+Required Skills:
+- Containerization: Docker, Kubernetes (EKS/GKE)
+- Cloud Platforms: AWS, Azure, or Google Cloud
+- Automation: Terraform, Ansible, Jenkins, Git
+- Scripting: Bash, Python
+- Monitoring: Prometheus, Grafana, ELK Stack
+
+Certifications:
+- AWS Solutions Architect or DevOps Engineer Professional is highly preferred.

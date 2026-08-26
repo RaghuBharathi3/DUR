@@ -1,0 +1,62 @@
+certification,organization,code
+AWS Certified Cloud Practitioner,AWS,CLF-C01
+AWS Certified Solutions Architect - Associate,AWS,SAA-C03
+AWS Certified Solutions Architect - Professional,AWS,SAP-C02
+AWS Certified Developer - Associate,AWS,DVA-C02
+AWS Certified SysOps Administrator - Associate,AWS,SOA-C02
+AWS Certified DevOps Engineer - Professional,AWS,DOP-C02
+AWS Certified Security - Specialty,AWS,SCS-C02
+AWS Certified Advanced Networking - Specialty,AWS,ANS-C01
+AWS Certified Machine Learning - Specialty,AWS,MLS-C01
+AWS Certified Data Analytics - Specialty,AWS,DAS-C01
+AWS Certified Database - Specialty,AWS,DBS-C01
+Microsoft Certified: Azure Fundamentals,Microsoft,AZ-900
+Microsoft Certified: Azure Administrator Associate,Microsoft,AZ-104
+Microsoft Certified: Azure Developer Associate,Microsoft,AZ-204
+Microsoft Certified: Azure Solutions Architect Expert,Microsoft,AZ-305
+Microsoft Certified: Azure DevOps Engineer Expert,Microsoft,AZ-400
+Microsoft Certified: Azure Security Engineer Associate,Microsoft,AZ-500
+Microsoft Certified: Azure Data Scientist Associate,Microsoft,DP-100
+Microsoft Certified: Azure Data Engineer Associate,Microsoft,DP-203
+Microsoft Certified: Azure Database Administrator Associate,Microsoft,DP-300
+Microsoft Certified: Power BI Data Analyst Associate,Microsoft,PL-300
+Google Cloud Certified Associate Cloud Engineer,Google,GCP-ACE
+Google Cloud Certified Professional Cloud Architect,Google,GCP-PCA
+Google Cloud Certified Professional Cloud Developer,Google,GCP-PCD
+Google Cloud Certified Professional Data Engineer,Google,GCP-PDE
+Google Cloud Certified Professional DevOps Engineer,Google,GCP-PDO
+Google Cloud Certified Professional Cloud Security Engineer,Google,GCP-PCS
+Google Cloud Certified Professional Machine Learning Engineer,Google,GCP-PMLE
+Oracle Certified Associate,Oracle,OCA
+Oracle Certified Professional,Oracle,OCP
+Oracle Certified Master,Oracle,OCM
+OCI Foundations Associate,Oracle,OCI-FA
+OCI Architect Associate,Oracle,OCI-AA
+OCI Architect Professional,Oracle,OCI-AP
+OCI Developer Associate,Oracle,OCI-DA
+CCNA - Cisco Certified Network Associate,Cisco,200-301
+CCNP Enterprise,Cisco,350-401
+CCIE Enterprise Infrastructure,Cisco,CCIE-EI
+Cisco Certified DevNet Associate,Cisco,200-901
+Cisco Certified DevNet Professional,Cisco,350-901
+CompTIA A+,CompTIA,A+
+CompTIA Network+,CompTIA,Network+
+CompTIA Security+,CompTIA,Security+
+CompTIA CySA+ (Cybersecurity Analyst),CompTIA,CySA+
+CompTIA PenTest+,CompTIA,PenTest+
+CompTIA CASP+ (Advanced Security Practitioner),CompTIA,CASP+
+CompTIA Cloud+,CompTIA,Cloud+
+CompTIA Linux+,CompTIA,Linux+
+CompTIA Project+,CompTIA,Project+
+Red Hat Certified System Administrator,Red Hat,RHCSA
+Red Hat Certified Engineer,Red Hat,RHCE
+Red Hat Certified Architect,Red Hat,RHCA
+Salesforce Certified Administrator,Salesforce,SF-Admin
+Salesforce Certified Advanced Administrator,Salesforce,SF-AdvAdmin
+Salesforce Certified Platform App Builder,Salesforce,SF-AppBuilder
+Salesforce Certified Platform Developer I,Salesforce,SF-PD1
+Salesforce Certified Platform Developer II,Salesforce,SF-PD2
+Salesforce Certified Technical Architect,Salesforce,SF-CTA
+IBM Certified Solution Developer - Cloud v4,IBM,IBM-CloudDev
+IBM Certified Data Engineer - Big Data,IBM,IBM-DataEng
+IBM Certified Associate Developer - Quantum,IBM,IBM-Quantum

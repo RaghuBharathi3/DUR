@@ -1,0 +1,667 @@
+skill,category,type
+Python,Languages,Technical
+Java,Languages,Technical
+JavaScript,Languages,Technical
+TypeScript,Languages,Technical
+C++,Languages,Technical
+C#,Languages,Technical
+Ruby,Languages,Technical
+Go,Languages,Technical
+Rust,Languages,Technical
+PHP,Languages,Technical
+R,Languages,Technical
+Swift,Languages,Technical
+Kotlin,Languages,Technical
+Scala,Languages,Technical
+MATLAB,Languages,Technical
+SQL,Languages,Technical
+HTML,Languages,Technical
+CSS,Languages,Technical
+Bash,Languages,Technical
+PowerShell,Languages,Technical
+Julia,Languages,Technical
+Perl,Languages,Technical
+Haskell,Languages,Technical
+Objective-C,Languages,Technical
+Solidity,Languages,Technical
+AWS,Cloud,Technical
+Azure,Cloud,Technical
+GCP,Cloud,Technical
+Heroku,Cloud,Technical
+DigitalOcean,Cloud,Technical
+Cloudflare,Cloud,Technical
+OpenStack,Cloud,Technical
+Terraform,DevOps,Technical
+Ansible,DevOps,Technical
+Docker,DevOps,Technical
+Kubernetes,DevOps,Technical
+Jenkins,DevOps,Technical
+Git,DevOps,Technical
+GitHub,DevOps,Technical
+GitLab,DevOps,Technical
+Bitbucket,DevOps,Technical
+CircleCI,DevOps,Technical
+GitHub Actions,DevOps,Technical
+PostgreSQL,Databases,Technical
+MySQL,Databases,Technical
+SQLite,Databases,Technical
+Oracle,Databases,Technical
+SQL Server,Databases,Technical
+MongoDB,Databases,Technical
+Redis,Databases,Technical
+Cassandra,Databases,Technical
+Neo4j,Databases,Technical
+Elasticsearch,Databases,Technical
+DynamoDB,Databases,Technical
+MariaDB,Databases,Technical
+Firebase,Databases,Technical
+Snowflake,Databases,Technical
+Redshift,Databases,Technical
+BigQuery,Databases,Technical
+React,WebFrameworks,Technical
+Angular,WebFrameworks,Technical
+Vue,WebFrameworks,Technical
+Next.js,WebFrameworks,Technical
+Svelte,WebFrameworks,Technical
+Express,WebFrameworks,Technical
+Node.js,WebFrameworks,Technical
+Django,WebFrameworks,Technical
+Flask,WebFrameworks,Technical
+FastAPI,WebFrameworks,Technical
+Spring Boot,WebFrameworks,Technical
+ASP.NET,WebFrameworks,Technical
+Laravel,WebFrameworks,Technical
+Ruby on Rails,WebFrameworks,Technical
+TensorFlow,MachineLearning,Technical
+PyTorch,MachineLearning,Technical
+Keras,MachineLearning,Technical
+Scikit-Learn,MachineLearning,Technical
+Pandas,MachineLearning,Technical
+NumPy,MachineLearning,Technical
+SciPy,MachineLearning,Technical
+Matplotlib,MachineLearning,Technical
+Seaborn,MachineLearning,Technical
+Plotly,MachineLearning,Technical
+NLTK,MachineLearning,Technical
+Spacy,MachineLearning,Technical
+HuggingFace,MachineLearning,Technical
+Transformers,MachineLearning,Technical
+LangChain,MachineLearning,Technical
+Milvus,MachineLearning,Technical
+Pinecone,MachineLearning,Technical
+OpenCV,MachineLearning,Technical
+YOLO,MachineLearning,Technical
+MLflow,MachineLearning,Technical
+Airflow,MachineLearning,Technical
+Spark,MachineLearning,Technical
+Hadoop,MachineLearning,Technical
+Tableau,DataAnalytics,Technical
+PowerBI,DataAnalytics,Technical
+Looker,DataAnalytics,Technical
+Excel,DataAnalytics,Technical
+Grafana,DataAnalytics,Technical
+Kibana,DataAnalytics,Technical
+Splunk,DataAnalytics,Technical
+Datadog,DataAnalytics,Technical
+Android,Mobile,Technical
+iOS,Mobile,Technical
+Flutter,Mobile,Technical
+React Native,Mobile,Technical
+JUnit,Testing,Technical
+PyTest,Testing,Technical
+Selenium,Testing,Technical
+Cypress,Testing,Technical
+Playwright,Testing,Technical
+Postman,Testing,Technical
+JMeter,Testing,Technical
+Linux,OS,Technical
+Windows Server,OS,Technical
+macOS,OS,Technical
+Unix,OS,Technical
+Ubuntu,OS,Technical
+Cryptography,Security,Technical
+SSL/TLS,Security,Technical
+OAuth,Security,Technical
+SAML,Security,Technical
+JWT,Security,Technical
+Firewall,Security,Technical
+Wireshark,Security,Technical
+Nmap,Security,Technical
+Metasploit,Security,Technical
+Burp Suite,Security,Technical
+OWASP,Security,Technical
+Penetration Testing,Security,Technical
+Vulnerability Assessment,Security,Technical
+Communication,SoftSkills,Soft
+Leadership,SoftSkills,Soft
+Teamwork,SoftSkills,Soft
+Collaboration,SoftSkills,Soft
+Problem Solving,SoftSkills,Soft
+Critical Thinking,SoftSkills,Soft
+Time Management,SoftSkills,Soft
+Conflict Resolution,SoftSkills,Soft
+Adaptability,SoftSkills,Soft
+Creativity,SoftSkills,Soft
+Presentation,SoftSkills,Soft
+Public Speaking,SoftSkills,Soft
+Negotiation,SoftSkills,Soft
+Mentoring,SoftSkills,Soft
+Project Management,SoftSkills,Soft
+Product Management,SoftSkills,Soft
+Technical Writing,SoftSkills,Soft
+Agile,Agile,Soft
+Scrum,Agile,Soft
+Kanban,Agile,Soft
+Jira,Agile,Soft
+Confluence,Agile,Soft
+Trello,Agile,Soft
+Asana,Agile,Soft
+Slack,Agile,Soft
+Systems Architecture,GeneralIT,Technical
+Microservices,GeneralIT,Technical
+REST,GeneralIT,Technical
+SOAP,GeneralIT,Technical
+GraphQL,GeneralIT,Technical
+gRPC,GeneralIT,Technical
+WebSockets,GeneralIT,Technical
+RabbitMQ,GeneralIT,Technical
+Kafka,GeneralIT,Technical
+TCP/IP,GeneralIT,Technical
+DNS,GeneralIT,Technical
+DHCP,GeneralIT,Technical
+SSH,GeneralIT,Technical
+SFTP,GeneralIT,Technical
+VPC,GeneralIT,Technical
+IAM,GeneralIT,Technical
+S3,GeneralIT,Technical
+EC2,GeneralIT,Technical
+Lambda,GeneralIT,Technical
+CloudWatch,GeneralIT,Technical
+Route53,GeneralIT,Technical
+Athena,GeneralIT,Technical
+Glue,GeneralIT,Technical
+Redshift,GeneralIT,Technical
+DynamoDB,GeneralIT,Technical
+RDS,GeneralIT,Technical
+Kinesis,GeneralIT,Technical
+EMR,GeneralIT,Technical
+SageMaker,GeneralIT,Technical
+ECS,GeneralIT,Technical
+EKS,GeneralIT,Technical
+Fargate,GeneralIT,Technical
+CloudFront,GeneralIT,Technical
+API Gateway,GeneralIT,Technical
+Cognito,GeneralIT,Technical
+DynamoDB Accelerator,GeneralIT,Technical
+ElastiCache,GeneralIT,Technical
+OpenSearch,GeneralIT,Technical
+DocumentDB,GeneralIT,Technical
+Neptune,GeneralIT,Technical
+Timestream,GeneralIT,Technical
+QLDB,GeneralIT,Technical
+Keyspaces,GeneralIT,Technical
+WAF,GeneralIT,Technical
+Shield,GeneralIT,Technical
+KMS,GeneralIT,Technical
+Secrets Manager,GeneralIT,Technical
+Systems Manager,GeneralIT,Technical
+CloudTrail,GeneralIT,Technical
+Config,GeneralIT,Technical
+Artifact,GeneralIT,Technical
+GuardDuty,GeneralIT,Technical
+Inspector,GeneralIT,Technical
+Macie,GeneralIT,Technical
+Security Hub,GeneralIT,Technical
+Single Sign-On,GeneralIT,Technical
+Directory Service,GeneralIT,Technical
+AppSync,GeneralIT,Technical
+Amplify,GeneralIT,Technical
+Device Farm,GeneralIT,Technical
+CodeCommit,GeneralIT,Technical
+CodeBuild,GeneralIT,Technical
+CodeDeploy,GeneralIT,Technical
+CodePipeline,GeneralIT,Technical
+CodeStar,GeneralIT,Technical
+Cloud9,GeneralIT,Technical
+X-Ray,GeneralIT,Technical
+QuickSight,GeneralIT,Technical
+Data Pipeline,GeneralIT,Technical
+Athena,GeneralIT,Technical
+EMR,GeneralIT,Technical
+Glue,GeneralIT,Technical
+Kinesis,GeneralIT,Technical
+Redshift,GeneralIT,Technical
+MSK,GeneralIT,Technical
+Lake Formation,GeneralIT,Technical
+Managed Blockchain,GeneralIT,Technical
+Quantum Ledger Database,GeneralIT,Technical
+Simple Workflow Service,GeneralIT,Technical
+Step Functions,GeneralIT,Technical
+Simple Queue Service,GeneralIT,Technical
+Simple Notification Service,GeneralIT,Technical
+Simple Email Service,GeneralIT,Technical
+MQ,GeneralIT,Technical
+EventBridge,GeneralIT,Technical
+AppFlow,GeneralIT,Technical
+Managed Workflows for Apache Airflow,GeneralIT,Technical
+Elastic Beanstalk,GeneralIT,Technical
+EC2 Auto Scaling,GeneralIT,Technical
+Lightsail,GeneralIT,Technical
+Batch,GeneralIT,Technical
+Outposts,GeneralIT,Technical
+Wavelength,GeneralIT,Technical
+Local Zones,GeneralIT,Technical
+SimSpace Weaver,GeneralIT,Technical
+App Runner,GeneralIT,Technical
+Copilot,GeneralIT,Technical
+Proton,GeneralIT,Technical
+S3 Glacier,GeneralIT,Technical
+Elastic Block Store,GeneralIT,Technical
+Elastic File System,GeneralIT,Technical
+FSx,GeneralIT,Technical
+Storage Gateway,GeneralIT,Technical
+Backup,GeneralIT,Technical
+Snow Family,GeneralIT,Technical
+Elastic Container Registry,GeneralIT,Technical
+Elastic Container Service,GeneralIT,Technical
+Elastic Kubernetes Service,GeneralIT,Technical
+Red Hat OpenShift on AWS,GeneralIT,Technical
+Serverless Application Repository,GeneralIT,Technical
+Aurora,GeneralIT,Technical
+RDS for PostgreSQL,GeneralIT,Technical
+RDS for MySQL,GeneralIT,Technical
+RDS for MariaDB,GeneralIT,Technical
+RDS for SQL Server,GeneralIT,Technical
+RDS for Oracle,GeneralIT,Technical
+ElastiCache for Redis,GeneralIT,Technical
+ElastiCache for Memcached,GeneralIT,Technical
+MemoryDB for Redis,GeneralIT,Technical
+DynamoDB,GeneralIT,Technical
+DocumentDB,GeneralIT,Technical
+Neptune,GeneralIT,Technical
+Timestream,GeneralIT,Technical
+Keyspaces,GeneralIT,Technical
+OpenSearch Service,GeneralIT,Technical
+CloudDirectory,GeneralIT,Technical
+DataSync,GeneralIT,Technical
+Transfer Family,GeneralIT,Technical
+Database Migration Service,GeneralIT,Technical
+Application Discovery Service,GeneralIT,Technical
+Database Migration Service,GeneralIT,Technical
+Migration Hub,GeneralIT,Technical
+Application Migration Service,GeneralIT,Technical
+Schema Conversion Tool,GeneralIT,Technical
+Control Tower,GeneralIT,Technical
+Systems Manager,GeneralIT,Technical
+CloudFormation,GeneralIT,Technical
+CloudTrail,GeneralIT,Technical
+Config,GeneralIT,Technical
+Service Catalog,GeneralIT,Technical
+Well-Architected Tool,GeneralIT,Technical
+Budgets,GeneralIT,Technical
+Cost Explorer,GeneralIT,Technical
+Cost and Usage Report,GeneralIT,Technical
+Billing Conductor,GeneralIT,Technical
+Compute Optimizer,GeneralIT,Technical
+Trust Advisor,GeneralIT,Technical
+Personal Health Dashboard,GeneralIT,Technical
+AppConfig,GeneralIT,Technical
+License Manager,GeneralIT,Technical
+Resource Groups,GeneralIT,Technical
+Service Quotas,GeneralIT,Technical
+Systems Manager Session Manager,GeneralIT,Technical
+Systems Manager Parameter Store,GeneralIT,Technical
+Systems Manager Run Command,GeneralIT,Technical
+Systems Manager Automation,GeneralIT,Technical
+Systems Manager Patch Manager,GeneralIT,Technical
+Systems Manager Distributor,GeneralIT,Technical
+Systems Manager State Manager,GeneralIT,Technical
+Systems Manager Inventory,GeneralIT,Technical
+Systems Manager Maintenance Windows,GeneralIT,Technical
+Systems Manager Compliance,GeneralIT,Technical
+Systems Manager OpsCenter,GeneralIT,Technical
+Systems Manager Explorer,GeneralIT,Technical
+Systems Manager Incident Manager,GeneralIT,Technical
+Systems Manager Change Manager,GeneralIT,Technical
+Systems Manager Application Manager,GeneralIT,Technical
+Elastic Load Balancing,GeneralIT,Technical
+Global Accelerator,GeneralIT,Technical
+Transit Gateway,GeneralIT,Technical
+Direct Connect,GeneralIT,Technical
+Site-to-Site VPN,GeneralIT,Technical
+Client VPN,GeneralIT,Technical
+Cloud Map,GeneralIT,Technical
+App Mesh,GeneralIT,Technical
+PrivateLink,GeneralIT,Technical
+Network Firewall,GeneralIT,Technical
+Route 53 Resolver,GeneralIT,Technical
+Core Network,GeneralIT,Technical
+VPC Lattice,GeneralIT,Technical
+Amplify,GeneralIT,Technical
+Device Farm,GeneralIT,Technical
+Pinpoint,GeneralIT,Technical
+Location Service,GeneralIT,Technical
+Chime,GeneralIT,Technical
+WorkMail,GeneralIT,Technical
+WorkDocs,GeneralIT,Technical
+WorkSpaces,GeneralIT,Technical
+AppStream 2.0,GeneralIT,Technical
+Connect,GeneralIT,Technical
+IQ,GeneralIT,Technical
+Support,GeneralIT,Technical
+Managed Services,GeneralIT,Technical
+Professional Services,GeneralIT,Technical
+Training and Certification,GeneralIT,Technical
+Enterprise Support,GeneralIT,Technical
+Partner Network,GeneralIT,Technical
+Marketplace,GeneralIT,Technical
+Cloud Practitioner,GeneralIT,Technical
+Solutions Architect,GeneralIT,Technical
+Developer,GeneralIT,Technical
+SysOps Administrator,GeneralIT,Technical
+DevOps Engineer,GeneralIT,Technical
+Advanced Networking,GeneralIT,Technical
+Security,GeneralIT,Technical
+Machine Learning,GeneralIT,Technical
+Data Analytics,GeneralIT,Technical
+Database,GeneralIT,Technical
+SAP on AWS,GeneralIT,Technical
+AWS Academy,GeneralIT,Technical
+AWS Educate,GeneralIT,Technical
+AWS User Groups,GeneralIT,Technical
+AWS Community Builders,GeneralIT,Technical
+AWS Heroes,GeneralIT,Technical
+AWS re:Invent,GeneralIT,Technical
+AWS re:Inforce,GeneralIT,Technical
+AWS Summit,GeneralIT,Technical
+AWS Loft,GeneralIT,Technical
+AWS Cloud Room,GeneralIT,Technical
+AWS Builder Labs,GeneralIT,Technical
+AWS Skill Builder,GeneralIT,Technical
+AWS Certified,GeneralIT,Technical
+AWS Certification,GeneralIT,Technical
+AWS Exam,GeneralIT,Technical
+AWS Practice Test,GeneralIT,Technical
+AWS Study Guide,GeneralIT,Technical
+AWS Whitepapers,GeneralIT,Technical
+AWS Documentation,GeneralIT,Technical
+AWS Console,GeneralIT,Technical
+AWS Command Line Interface,GeneralIT,Technical
+AWS Tools for PowerShell,GeneralIT,Technical
+AWS Cloud Development Kit,GeneralIT,Technical
+AWS Serverless Application Model,GeneralIT,Technical
+AWS Software Development Kit,GeneralIT,Technical
+AWS Amplify Console,GeneralIT,Technical
+AWS App Runner,GeneralIT,Technical
+AWS Elastic Beanstalk,GeneralIT,Technical
+AWS Cloud9,GeneralIT,Technical
+AWS CodeCommit,GeneralIT,Technical
+AWS CodeBuild,GeneralIT,Technical
+AWS CodeDeploy,GeneralIT,Technical
+AWS CodePipeline,GeneralIT,Technical
+AWS CodeStar,GeneralIT,Technical
+AWS Copilot,GeneralIT,Technical
+AWS Proton,GeneralIT,Technical
+AWS X-Ray,GeneralIT,Technical
+AWS CloudWatch Logs,GeneralIT,Technical
+AWS CloudWatch Metrics,GeneralIT,Technical
+AWS CloudWatch Alarms,GeneralIT,Technical
+AWS CloudWatch Dashboards,GeneralIT,Technical
+AWS CloudWatch Events,GeneralIT,Technical
+AWS EventBridge,GeneralIT,Technical
+AWS Systems Manager Parameter Store,GeneralIT,Technical
+AWS Systems Manager Session Manager,GeneralIT,Technical
+AWS Systems Manager Run Command,GeneralIT,Technical
+AWS Systems Manager Automation,GeneralIT,Technical
+AWS Systems Manager Patch Manager,GeneralIT,Technical
+AWS Systems Manager State Manager,GeneralIT,Technical
+AWS Systems Manager Inventory,GeneralIT,Technical
+AWS Systems Manager Maintenance Windows,GeneralIT,Technical
+AWS Systems Manager Compliance,GeneralIT,Technical
+AWS Systems Manager OpsCenter,GeneralIT,Technical
+AWS Systems Manager Explorer,GeneralIT,Technical
+AWS Systems Manager Incident Manager,GeneralIT,Technical
+AWS Systems Manager Change Manager,GeneralIT,Technical
+AWS Systems Manager Application Manager,GeneralIT,Technical
+AWS Resource Groups,GeneralIT,Technical
+AWS Tagging,GeneralIT,Technical
+AWS Cost Explorer,GeneralIT,Technical
+AWS Budgets,GeneralIT,Technical
+AWS Cost and Usage Report,GeneralIT,Technical
+AWS Billing Conductor,GeneralIT,Technical
+AWS Compute Optimizer,GeneralIT,Technical
+AWS Trusted Advisor,GeneralIT,Technical
+AWS Support,GeneralIT,Technical
+AWS Basic Support,GeneralIT,Technical
+AWS Developer Support,GeneralIT,Technical
+AWS Business Support,GeneralIT,Technical
+AWS Enterprise On-Ramp Support,GeneralIT,Technical
+AWS Enterprise Support,GeneralIT,Technical
+AWS Technical Account Manager,GeneralIT,Technical
+AWS Concierge,GeneralIT,Technical
+AWS Infrastructure Event Management,GeneralIT,Technical
+AWS Well-Architected Tool,GeneralIT,Technical
+AWS Well-Architected Framework,GeneralIT,Technical
+AWS Cloud Adoption Framework,GeneralIT,Technical
+AWS Well-Architected Review,GeneralIT,Technical
+AWS Migration Acceleration Program,GeneralIT,Technical
+AWS Migration Hub,GeneralIT,Technical
+AWS Application Discovery Service,GeneralIT,Technical
+AWS Database Migration Service,GeneralIT,Technical
+AWS Schema Conversion Tool,GeneralIT,Technical
+AWS DataSync,GeneralIT,Technical
+AWS Transfer Family,GeneralIT,Technical
+AWS Snowball,GeneralIT,Technical
+AWS Snowcone,GeneralIT,Technical
+AWS Snowmobile,GeneralIT,Technical
+AWS Outposts,GeneralIT,Technical
+AWS Local Zones,GeneralIT,Technical
+AWS Wavelength,GeneralIT,Technical
+AWS SimSpace Weaver,GeneralIT,Technical
+AWS CloudTrail,GeneralIT,Technical
+AWS Config,GeneralIT,Technical
+AWS Service Catalog,GeneralIT,Technical
+AWS License Manager,GeneralIT,Technical
+AWS Control Tower,GeneralIT,Technical
+AWS Organizations,GeneralIT,Technical
+AWS Service Control Policies,GeneralIT,Technical
+AWS Landing Zone,GeneralIT,Technical
+AWS IAM Identity Center,GeneralIT,Technical
+AWS Directory Service,GeneralIT,Technical
+AWS WAF,GeneralIT,Technical
+AWS Shield,GeneralIT,Technical
+AWS Firewall Manager,GeneralIT,Technical
+AWS Network Firewall,GeneralIT,Technical
+AWS Route 53 Resolver,GeneralIT,Technical
+AWS Transit Gateway,GeneralIT,Technical
+AWS PrivateLink,GeneralIT,Technical
+AWS App Mesh,GeneralIT,Technical
+AWS Cloud Map,GeneralIT,Technical
+AWS Global Accelerator,GeneralIT,Technical
+AWS Direct Connect,GeneralIT,Technical
+AWS Site-to-Site VPN,GeneralIT,Technical
+AWS Client VPN,GeneralIT,Technical
+AWS Virtual Private Cloud,GeneralIT,Technical
+AWS Subnet,GeneralIT,Technical
+AWS Route Table,GeneralIT,Technical
+AWS Internet Gateway,GeneralIT,Technical
+AWS NAT Gateway,GeneralIT,Technical
+AWS Egress-Only Internet Gateway,GeneralIT,Technical
+AWS Security Group,GeneralIT,Technical
+AWS Network Access Control List,GeneralIT,Technical
+AWS Peering Connection,GeneralIT,Technical
+AWS Elastic IP,GeneralIT,Technical
+AWS Elastic Network Interface,GeneralIT,Technical
+AWS Network Load Balancer,GeneralIT,Technical
+AWS Application Load Balancer,GeneralIT,Technical
+AWS Classic Load Balancer,GeneralIT,Technical
+AWS Gateway Load Balancer,GeneralIT,Technical
+AWS Route 53,GeneralIT,Technical
+AWS Route 53 Traffic Flow,GeneralIT,Technical
+AWS Route 53 Health Checks,GeneralIT,Technical
+AWS Route 53 Domain Registration,GeneralIT,Technical
+AWS Elastic Compute Cloud,GeneralIT,Technical
+AWS EC2 Instance,GeneralIT,Technical
+AWS Amazon Machine Image,GeneralIT,Technical
+AWS EC2 User Data,GeneralIT,Technical
+AWS EC2 Metadata,GeneralIT,Technical
+AWS EC2 Instance Store,GeneralIT,Technical
+AWS Elastic Block Store,GeneralIT,Technical
+AWS EBS Volume,GeneralIT,Technical
+AWS EBS Snapshot,GeneralIT,Technical
+AWS EBS Encryption,GeneralIT,Technical
+AWS Elastic File System,GeneralIT,Technical
+AWS EFS File System,GeneralIT,Technical
+AWS EFS Access Points,GeneralIT,Technical
+AWS FSx for Lustre,GeneralIT,Technical
+AWS FSx for Windows File Server,GeneralIT,Technical
+AWS FSx for NetApp ONTAP,GeneralIT,Technical
+AWS FSx for OpenZFS,GeneralIT,Technical
+AWS Storage Gateway,GeneralIT,Technical
+AWS Backup,GeneralIT,Technical
+AWS Backup Plan,GeneralIT,Technical
+AWS Backup Vault,GeneralIT,Technical
+AWS S3,GeneralIT,Technical
+AWS S3 Bucket,GeneralIT,Technical
+AWS S3 Object,GeneralIT,Technical
+AWS S3 Standard,GeneralIT,Technical
+AWS S3 Intelligent-Tiering,GeneralIT,Technical
+AWS S3 Standard-IA,GeneralIT,Technical
+AWS S3 One Zone-IA,GeneralIT,Technical
+AWS S3 Glacier Instant Retrieval,GeneralIT,Technical
+AWS S3 Glacier Flexible Retrieval,GeneralIT,Technical
+AWS S3 Glacier Deep Archive,GeneralIT,Technical
+AWS S3 Lifecycle Policies,GeneralIT,Technical
+AWS S3 Versioning,GeneralIT,Technical
+AWS S3 Replication,GeneralIT,Technical
+AWS S3 Encryption,GeneralIT,Technical
+AWS S3 Access Control Lists,GeneralIT,Technical
+AWS S3 Bucket Policies,GeneralIT,Technical
+AWS S3 Access Points,GeneralIT,Technical
+AWS S3 Multi-Region Access Points,GeneralIT,Technical
+AWS S3 Object Lambda,GeneralIT,Technical
+AWS S3 Storage Lens,GeneralIT,Technical
+AWS S3 Batch Operations,GeneralIT,Technical
+AWS CloudFront,GeneralIT,Technical
+AWS CloudFront Distribution,GeneralIT,Technical
+AWS CloudFront Origin,GeneralIT,Technical
+AWS CloudFront Cache Behavior,GeneralIT,Technical
+AWS CloudFront Functions,GeneralIT,Technical
+AWS Lambda@Edge,GeneralIT,Technical
+AWS Global Accelerator,GeneralIT,Technical
+AWS API Gateway,GeneralIT,Technical
+AWS API Gateway REST API,GeneralIT,Technical
+AWS API Gateway HTTP API,GeneralIT,Technical
+AWS API Gateway WebSocket API,GeneralIT,Technical
+AWS API Gateway Custom Authorizer,GeneralIT,Technical
+AWS Cognito,GeneralIT,Technical
+AWS Cognito User Pool,GeneralIT,Technical
+AWS Cognito Identity Pool,GeneralIT,Technical
+AWS Simple Storage Service,GeneralIT,Technical
+AWS Elastic Container Registry,GeneralIT,Technical
+AWS Elastic Container Service,GeneralIT,Technical
+AWS Elastic Kubernetes Service,GeneralIT,Technical
+AWS Fargate,GeneralIT,Technical
+AWS Lambda,GeneralIT,Technical
+AWS Lambda Function,GeneralIT,Technical
+AWS Lambda Layers,GeneralIT,Technical
+AWS Lambda Destination,GeneralIT,Technical
+AWS Lambda Event Source Mapping,GeneralIT,Technical
+AWS Lambda Container Image,GeneralIT,Technical
+AWS Serverless Application Repository,GeneralIT,Technical
+AWS Step Functions,GeneralIT,Technical
+AWS Simple Queue Service,GeneralIT,Technical
+AWS SQS Queue,GeneralIT,Technical
+AWS SQS Standard Queue,GeneralIT,Technical
+AWS SQS FIFO Queue,GeneralIT,Technical
+AWS SQS Dead-Letter Queue,GeneralIT,Technical
+AWS Simple Notification Service,GeneralIT,Technical
+AWS SNS Topic,GeneralIT,Technical
+AWS SNS Subscription,GeneralIT,Technical
+AWS Simple Email Service,GeneralIT,Technical
+AWS SES Domain,GeneralIT,Technical
+AWS SES Email Address,GeneralIT,Technical
+AWS SES Receipt Rule,GeneralIT,Technical
+AWS MQ,GeneralIT,Technical
+AWS MQ Broker,GeneralIT,Technical
+AWS EventBridge,GeneralIT,Technical
+AWS EventBridge Event Bus,GeneralIT,Technical
+AWS EventBridge Rule,GeneralIT,Technical
+AWS EventBridge Schema Registry,GeneralIT,Technical
+AWS AppFlow,GeneralIT,Technical
+AWS Managed Workflows for Apache Airflow,GeneralIT,Technical
+AWS Relational Database Service,GeneralIT,Technical
+AWS Aurora,GeneralIT,Technical
+AWS Aurora Serverless,GeneralIT,Technical
+AWS Aurora Global Database,GeneralIT,Technical
+AWS DynamoDB,GeneralIT,Technical
+AWS DynamoDB Table,GeneralIT,Technical
+AWS DynamoDB Partition Key,GeneralIT,Technical
+AWS DynamoDB Sort Key,GeneralIT,Technical
+AWS DynamoDB Global Secondary Index,GeneralIT,Technical
+AWS DynamoDB Local Secondary Index,GeneralIT,Technical
+AWS DynamoDB Streams,GeneralIT,Technical
+AWS DynamoDB Accelerator,GeneralIT,Technical
+AWS DocumentDB,GeneralIT,Technical
+AWS Neptune,GeneralIT,Technical
+AWS Timestream,GeneralIT,Technical
+AWS Keyspaces,GeneralIT,Technical
+AWS ElastiCache,GeneralIT,Technical
+AWS ElastiCache for Redis,GeneralIT,Technical
+AWS ElastiCache for Memcached,GeneralIT,Technical
+AWS MemoryDB for Redis,GeneralIT,Technical
+AWS OpenSearch Service,GeneralIT,Technical
+AWS CloudDirectory,GeneralIT,Technical
+AWS Redshift,GeneralIT,Technical
+AWS Redshift Cluster,GeneralIT,Technical
+AWS Redshift Serverless,GeneralIT,Technical
+AWS Athena,GeneralIT,Technical
+AWS EMR,GeneralIT,Technical
+AWS Glue,GeneralIT,Technical
+AWS Glue Crawler,GeneralIT,Technical
+AWS Glue Data Catalog,GeneralIT,Technical
+AWS Glue Job,GeneralIT,Technical
+AWS Glue DataBrew,GeneralIT,Technical
+AWS Glue Elastic Views,GeneralIT,Technical
+AWS Kinesis,GeneralIT,Technical
+AWS Kinesis Data Streams,GeneralIT,Technical
+AWS Kinesis Data Firehose,GeneralIT,Technical
+AWS Kinesis Data Analytics,GeneralIT,Technical
+AWS Kinesis Video Streams,GeneralIT,Technical
+AWS MSK,GeneralIT,Technical
+AWS Lake Formation,GeneralIT,Technical
+AWS QuickSight,GeneralIT,Technical
+AWS Data Pipeline,GeneralIT,Technical
+AWS SageMaker,GeneralIT,Technical
+AWS SageMaker Studio,GeneralIT,Technical
+AWS SageMaker Autopilot,GeneralIT,Technical
+AWS SageMaker Canvas,GeneralIT,Technical
+AWS SageMaker Data Wrangler,GeneralIT,Technical
+AWS SageMaker Feature Store,GeneralIT,Technical
+AWS SageMaker Pipelines,GeneralIT,Technical
+AWS SageMaker Model Registry,GeneralIT,Technical
+AWS SageMaker Clarify,GeneralIT,Technical
+AWS SageMaker Edge Manager,GeneralIT,Technical
+AWS SageMaker Ground Truth,GeneralIT,Technical
+AWS DeepRacer,GeneralIT,Technical
+AWS DeepLens,GeneralIT,Technical
+AWS DeepComposer,GeneralIT,Technical
+AWS IoT Core,GeneralIT,Technical
+AWS IoT Device Management,GeneralIT,Technical
+AWS IoT Device Defender,GeneralIT,Technical
+AWS IoT Analytics,GeneralIT,Technical
+AWS IoT SiteWise,GeneralIT,Technical
+AWS IoT Events,GeneralIT,Technical
+AWS IoT Things Graph,GeneralIT,Technical
+AWS IoT Greengrass,GeneralIT,Technical
+AWS Certified Solutions Architect,GeneralIT,Technical
+AWS Certified Developer,GeneralIT,Technical
+AWS Certified SysOps Administrator,GeneralIT,Technical
+AWS Certified DevOps Engineer,GeneralIT,Technical
+AWS Certified Cloud Practitioner,GeneralIT,Technical
+AWS Certified Security Specialty,GeneralIT,Technical
+AWS Certified Machine Learning Specialty,GeneralIT,Technical
+AWS Certified Data Analytics Specialty,GeneralIT,Technical
+AWS Certified Database Specialty,GeneralIT,Technical
+AWS Certified SAP on AWS Specialty,GeneralIT,Technical
+AWS Certified Advanced Networking Specialty,GeneralIT,Technical

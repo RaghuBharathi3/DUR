@@ -1,0 +1,20 @@
+Position: Senior Data Scientist
+Location: Remote / New York
+Company: AI Innovations
+
+Job Description:
+We are looking for an experienced Data Scientist with 5+ years of experience to join our growing AI team.
+You will build predictive models, design data pipelines, and develop machine learning algorithms.
+
+Required Technical Skills:
+- Programming: Python, R, SQL
+- Machine Learning: Random Forest, SVM, Deep Learning
+- Frameworks: PyTorch, TensorFlow, Scikit-Learn
+- Tools: Git, Docker, Kubernetes, Airflow, Spark
+- Visualization: Tableau or PowerBI
+
+Education:
+- Bachelor or Master degree in Computer Science, Data Science, Statistics, or a related field.
+
+Certifications:
+- AWS Certified Machine Learning Specialty or Google Cloud Professional Data Engineer is a major plus.

@@ -1,0 +1,14 @@
+# R binary installer
+R-4.3.2-win.exe
+
+# Shiny logs/history
+.Rhistory
+.RData
+.Ruserdata
+.Rproj.user/
+
+# Temporary outputs
+outputs/graphs/*
+outputs/reports/*
+!outputs/graphs/.gitkeep
+!outputs/reports/.gitkeep
