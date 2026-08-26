@@ -1,4 +1,4 @@
-# Conversation History: Running Resume ATS Score Analytics
+# Running Resume ATS Score Analytics
 
 
 To run the R Shiny application, you have two primary options:
