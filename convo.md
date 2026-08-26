@@ -1,11 +1,6 @@
 # Conversation History: Running Resume ATS Score Analytics
 
-## User Request
-how to run it 
 
----
-
-## Assistant Response
 To run the R Shiny application, you have two primary options:
 
 ### Option 1: Double-click the Batch File (Recommended & Easiest)
@@ -37,8 +32,6 @@ If you prefer running it inside RStudio:
 
 ---
 
-## User Request
-# Goal
 Publish this conversation into GitHub repo at:
 https://github.com/RaghuBharathi3/DUR
 
