@@ -4,7 +4,7 @@ This is a comprehensive, production-quality final-year B.Tech Data Science proje
 
 ---
 
-## 🚀 Key Features
+##  Key Features
 
 *   **PDF Text Extraction & Cleaning**: Programmatic extraction of text from PDF resumes using `pdftools` with a robust text preprocessing, tokenization, stopword removal, and Porter stemming pipeline.
 *   **Feature Engineering**: Automatically extracts:
@@ -23,7 +23,7 @@ This is a comprehensive, production-quality final-year B.Tech Data Science proje
 
 ---
 
-## 📂 Project Structure
+## Project Structure
 
 ```text
 ResumeATSAnalytics/
@@ -58,7 +58,7 @@ ResumeATSAnalytics/
 
 ---
 
-## 🛠️ Installation & Setup
+## Installation & Setup
 
 ### 1. Prerequisite Dependencies
 Make sure you have R and RStudio installed.
@@ -84,7 +84,7 @@ install.packages(c(
 
 ---
 
-## 💻 Running the Application
+##  Running the Application
 
 To run the application, navigate to the `ResumeATSAnalytics/` directory in RStudio, set it as your working directory, and run the following single command in the console:
 
@@ -101,7 +101,7 @@ On the first execution:
 
 ---
 
-## 📊 Methodology & Data Pipeline
+##  Methodology & Data Pipeline
 
 ```mermaid
 graph TD
@@ -126,7 +126,7 @@ graph TD
 
 ---
 
-## 📈 Model Performance Comparisons
+##  Model Performance Comparisons
 
 The system trains models and compares performance using standard evaluation metrics:
 
