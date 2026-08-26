@@ -8,122 +8,257 @@ source("global.R")
 custom_css <- "
   @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
   
-  body, .wrapper, .main-sidebar, .left-side {
-    font-family: 'Inter', sans-serif !important;
-    background-color: #F8FAFC !important;
+  :root {
+    --slate-50: #f8fafc;
+    --slate-100: #f1f5f9;
+    --slate-200: #e2e8f0;
+    --slate-300: #cbd5e1;
+    --slate-700: #334155;
+    --slate-800: #1e293b;
+    --slate-900: #0f172a;
+    --indigo-500: #6366f1;
+    --indigo-600: #4f46e5;
+    --indigo-700: #4338ca;
+    --emerald-500: #10b981;
+    --emerald-600: #059669;
+    --rose-500: #f43f5e;
+    --rose-600: #e11d48;
+    --amber-500: #f59e0b;
+    --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+    --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.1);
+    --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -4px rgba(0, 0, 0, 0.1);
+    --radius-md: 8px;
+    --radius-lg: 12px;
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   }
   
+  body, .wrapper, .main-sidebar, .left-side {
+    font-family: 'Inter', sans-serif !important;
+    background-color: var(--slate-50) !important;
+  }
+  
+  /* Scrollbar Customization */
+  ::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+  }
+  ::-webkit-scrollbar-track {
+    background: var(--slate-100);
+  }
+  ::-webkit-scrollbar-thumb {
+    background: var(--slate-300);
+    border-radius: 4px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: var(--slate-700);
+  }
+
   /* Header styling */
   .main-header .logo {
     font-family: 'Inter', sans-serif !important;
     font-weight: 700 !important;
-    background-color: #1E2937 !important;
+    background-color: var(--slate-900) !important;
     color: #FFFFFF !important;
+    border-bottom: 1px solid var(--slate-800);
   }
   
   .main-header .navbar {
-    background-color: #1F2937 !important;
+    background-color: var(--slate-900) !important;
+    box-shadow: var(--shadow-sm);
   }
   
   /* Sidebar styling */
   .main-sidebar {
-    background-color: #111827 !important;
+    background-color: var(--slate-900) !important;
+    border-right: 1px solid var(--slate-800);
   }
   
   .sidebar-menu li a {
     font-weight: 500;
     font-size: 14px;
-    color: #9CA3AF !important;
+    color: var(--slate-300) !important;
     border-left: 3px solid transparent;
+    padding: 12px 15px 12px 20px !important;
+    transition: var(--transition-smooth);
   }
   
   .sidebar-menu li.active a, .sidebar-menu li a:hover {
     color: #FFFFFF !important;
-    background-color: #1F2937 !important;
-    border-left-color: #3B82F6 !important;
+    background-color: var(--slate-800) !important;
+    border-left-color: var(--indigo-500) !important;
   }
   
   /* Box Cards styling */
   .box {
-    border-radius: 12px !important;
-    border-top: 3px solid #3B82F6 !important;
-    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03) !important;
+    border-radius: var(--radius-lg) !important;
+    border: 1px solid var(--slate-200) !important;
+    border-top: 4px solid var(--indigo-600) !important;
+    box-shadow: var(--shadow-sm) !important;
     background: #FFFFFF !important;
+    transition: var(--transition-smooth);
+    margin-bottom: 24px;
   }
   
+  .box:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-md) !important;
+  }
+  
+  .box.box-solid {
+    border-top: 1px solid var(--slate-200) !important;
+  }
+  
+  /* Custom Box Status Colors */
+  .box.box-primary { border-top-color: var(--indigo-600) !important; }
+  .box.box-success { border-top-color: var(--emerald-500) !important; }
+  .box.box-danger { border-top-color: var(--rose-500) !important; }
+  .box.box-warning { border-top-color: var(--amber-500) !important; }
+  .box.box-info { border-top-color: var(--indigo-500) !important; }
+
   .box-header {
-    border-bottom: 1px solid #F1F5F9 !important;
+    border-bottom: 1px solid var(--slate-100) !important;
     font-weight: 600;
+    color: var(--slate-800);
+    padding: 15px 20px !important;
+  }
+  
+  .box-title {
+    font-size: 16px !important;
+    font-weight: 600 !important;
+  }
+
+  .box-body {
+    padding: 20px !important;
   }
   
   /* Info box cards */
   .info-box {
-    border-radius: 12px !important;
-    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05) !important;
+    border-radius: var(--radius-lg) !important;
+    box-shadow: var(--shadow-sm) !important;
+    border: 1px solid var(--slate-200);
+    background: #FFFFFF !important;
+    transition: var(--transition-smooth);
+  }
+  
+  .info-box:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-md) !important;
   }
   
   .info-box-icon {
-    border-top-left-radius: 12px;
-    border-bottom-left-radius: 12px;
+    border-top-left-radius: var(--radius-lg);
+    border-bottom-left-radius: var(--radius-lg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
   
   /* Custom Buttons */
   .btn-primary {
-    background-color: #2563EB !important;
-    border-color: #2563EB !important;
-    border-radius: 8px !important;
+    background-color: var(--indigo-600) !important;
+    border-color: var(--indigo-600) !important;
+    border-radius: var(--radius-md) !important;
     font-weight: 600 !important;
-    padding: 8px 16px !important;
-    transition: all 0.2s;
+    padding: 10px 20px !important;
+    transition: var(--transition-smooth);
+    box-shadow: var(--shadow-sm);
   }
   
-  .btn-primary:hover {
-    background-color: #1D4ED8 !important;
-    box-shadow: 0 4px 12px rgba(37, 99, 235, 0.2) !important;
+  .btn-primary:hover, .btn-primary:focus {
+    background-color: var(--indigo-700) !important;
+    border-color: var(--indigo-700) !important;
+    box-shadow: 0 4px 12px rgba(79, 70, 229, 0.3) !important;
+  }
+  
+  .btn-success {
+    background-color: var(--emerald-500) !important;
+    border-color: var(--emerald-500) !important;
+    border-radius: var(--radius-md) !important;
+    font-weight: 600 !important;
+    padding: 10px 20px !important;
+    transition: var(--transition-smooth);
+  }
+  
+  .btn-success:hover {
+    background-color: var(--emerald-600) !important;
+    border-color: var(--emerald-600) !important;
+    box-shadow: 0 4px 12px rgba(16, 185, 129, 0.3) !important;
+  }
+
+  /* Form control improvements */
+  .form-control, .selectize-input {
+    border-radius: var(--radius-md) !important;
+    border: 1px solid var(--slate-200) !important;
+    padding: 8px 12px !important;
+    box-shadow: none !important;
+    transition: var(--transition-smooth);
+  }
+
+  .form-control:focus, .selectize-input.focus {
+    border-color: var(--indigo-500) !important;
+    box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.15) !important;
   }
   
   /* Score badge */
   .score-badge {
-    display: inline-block;
-    width: 90px;
-    height: 90px;
-    line-height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 100px;
     border-radius: 50%;
-    font-size: 28px;
+    font-size: 32px;
     font-weight: 700;
     color: white;
-    text-align: center;
-    margin: 15px auto;
-    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    box-shadow: var(--shadow-lg);
   }
   
   .score-pass {
-    background: linear-gradient(135deg, #10B981, #059669);
+    background: linear-gradient(135deg, var(--emerald-500), var(--emerald-600));
   }
   
   .score-fail {
-    background: linear-gradient(135deg, #EF4444, #DC2626);
+    background: linear-gradient(135deg, var(--rose-500), var(--rose-600));
   }
   
   .skill-badge {
     display: inline-block;
-    padding: 6px 12px;
+    padding: 6px 14px;
     margin: 4px;
-    font-size: 12px;
+    font-size: 13px;
     font-weight: 500;
-    border-radius: 20px;
+    border-radius: 9999px;
+    transition: var(--transition-smooth);
   }
   
   .skill-tag-missing {
-    background-color: #FEE2E2;
-    color: #991B1B;
-    border: 1px solid #FCA5A5;
+    background-color: #FFE4E6;
+    color: #BE123C;
+    border: 1px solid #FDA4AF;
+  }
+  
+  .skill-tag-missing:hover {
+    background-color: #FECDD3;
   }
   
   .skill-tag-detected {
     background-color: #D1FAE5;
-    color: #065F46;
+    color: #047857;
     border: 1px solid #6EE7B7;
+  }
+  
+  .skill-tag-detected:hover {
+    background-color: #A7F3D0;
+  }
+
+  /* Page tab transitions */
+  .tab-pane {
+    opacity: 0;
+    transition: opacity 0.35s ease-in-out;
+  }
+  .tab-pane.active {
+    opacity: 1;
   }
 "
 
@@ -174,7 +309,7 @@ ui <- dashboardPage(
               title = "ATS Pool Score Distribution",
               width = NULL,
               status = "primary",
-              plotlyOutput("pool_ats_dist_plot", height = "350px")
+              withSpinner(plotlyOutput("pool_ats_dist_plot", height = "350px"), type = 8, color = "#4f46e5")
             )
           ),
           column(
@@ -207,7 +342,7 @@ ui <- dashboardPage(
               width = NULL,
               status = "info",
               solidHeader = TRUE,
-              DTOutput("history_table")
+              withSpinner(DTOutput("history_table"), type = 8, color = "#4f46e5")
             )
           )
         )
@@ -276,7 +411,7 @@ ui <- dashboardPage(
                     title = "ATS Pass Probability",
                     width = NULL,
                     status = "info",
-                    plotlyOutput("pass_gauge_plot", height = "150px"),
+                    withSpinner(plotlyOutput("pass_gauge_plot", height = "150px"), type = 8, color = "#4f46e5"),
                     br(),
                     downloadButton("download_report_btn", "Download Evaluation PDF Report", 
                                    class = "btn-success btn-block")
@@ -312,7 +447,7 @@ ui <- dashboardPage(
                     title = "Resume Text Analysis Features",
                     width = NULL,
                     status = "info",
-                    tableOutput("resume_features_table")
+                    withSpinner(tableOutput("resume_features_table"), type = 8, color = "#4f46e5")
                   )
                 ),
                 column(
@@ -380,7 +515,7 @@ ui <- dashboardPage(
                 width = NULL,
                 status = "info",
                 solidHeader = TRUE,
-                DTOutput("batch_results_table")
+                withSpinner(DTOutput("batch_results_table"), type = 8, color = "#4f46e5")
               )
             )
           )
@@ -413,7 +548,7 @@ ui <- dashboardPage(
               width = NULL,
               status = "info",
               solidHeader = TRUE,
-              DTOutput("job_openings_table")
+              withSpinner(DTOutput("job_openings_table"), type = 8, color = "#4f46e5")
             )
           )
         )
@@ -442,7 +577,7 @@ ui <- dashboardPage(
                 title = "Resume Word Cloud",
                 width = NULL,
                 status = "primary",
-                plotOutput("resume_wordcloud", height = "350px")
+                withSpinner(plotOutput("resume_wordcloud", height = "350px"), type = 8, color = "#4f46e5")
               )
             ),
             column(
@@ -451,7 +586,7 @@ ui <- dashboardPage(
                 title = "Skills Category Match Coverage",
                 width = NULL,
                 status = "primary",
-                plotlyOutput("skills_radar_plot", height = "350px")
+                withSpinner(plotlyOutput("skills_radar_plot", height = "350px"), type = 8, color = "#4f46e5")
               )
             )
           ),
@@ -463,7 +598,7 @@ ui <- dashboardPage(
                 title = "Experience Benchmark Comparison",
                 width = NULL,
                 status = "info",
-                plotlyOutput("experience_scatter_plot", height = "350px")
+                withSpinner(plotlyOutput("experience_scatter_plot", height = "350px"), type = 8, color = "#4f46e5")
               )
             ),
             column(
@@ -502,7 +637,7 @@ ui <- dashboardPage(
                 title = "Keyword Matching Density Profile",
                 width = NULL,
                 status = "primary",
-                plotlyOutput("keyword_density_bar_plot", height = "400px")
+                withSpinner(plotlyOutput("keyword_density_bar_plot", height = "400px"), type = 8, color = "#4f46e5")
               )
             ),
             column(
@@ -548,7 +683,7 @@ ui <- dashboardPage(
               title = "Random Forest - Feature Importance",
               width = NULL,
               status = "info",
-              plotlyOutput("feature_importance_plot", height = "350px")
+              withSpinner(plotlyOutput("feature_importance_plot", height = "350px"), type = 8, color = "#4f46e5")
             )
           ),
           column(

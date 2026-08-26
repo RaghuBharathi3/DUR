@@ -21,7 +21,10 @@ required_pkgs <- c(
   "DBI", "RSQLite", "shinycssloaders", "shinyWidgets", "fresh", "shinyjs"
 )
 
-missing_pkgs <- required_pkgs[!required_pkgs %in% rownames(installed.packages())]
+is_pkg_installed <- function(pkg) {
+  system.file(package = pkg) != ""
+}
+missing_pkgs <- required_pkgs[!sapply(required_pkgs, is_pkg_installed)]
 if (length(missing_pkgs) > 0) {
   message("Installing missing packages: ", paste(missing_pkgs, collapse = ", "))
   install.packages(missing_pkgs,
