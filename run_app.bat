@@ -1,5 +1,5 @@
 @echo off
-cd /d "C:\Users\Windows\Documents\R\ResumeATSAnalytics"
+cd /d "%~dp0"
 echo ==========================================
 echo  Resume ATS Analytics - Launching App...
 echo ==========================================

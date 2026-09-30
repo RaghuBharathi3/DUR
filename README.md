@@ -4,7 +4,7 @@ This is a comprehensive, production-quality final-year B.Tech Data Science proje
 
 ---
 
-##  Key Features
+## Key Features
 
 *   **PDF Text Extraction & Cleaning**: Programmatic extraction of text from PDF resumes using `pdftools` with a robust text preprocessing, tokenization, stopword removal, and Porter stemming pipeline.
 *   **Feature Engineering**: Automatically extracts:
@@ -12,14 +12,17 @@ This is a comprehensive, production-quality final-year B.Tech Data Science proje
     *   Project counts and certifications.
     *   Readability score (Flesch-Kincaid formula).
     *   Counts of action verbs, programming languages, cloud skills, AI skills, and data skills.
-*   **Similarity Computation**: Calculates Cosine Similarity on TF-IDF vectors of the resume and job description.
-*   **Machine Learning Models**: Trains and compares multiple models on a resume pool dataset:
-    *   **Regression**: Linear Regression, Decision Tree, Random Forest, SVM (predicting ATS Score).
+*   **Similarity Computation**: Calculates Cosine Similarity on TF-IDF vectors of the resume and job description via `text2vec`.
+*   **Machine Learning Models**:
+    *   **Regression**: Linear Regression, Decision Tree, Random Forest, SVM (predicting continuous 0-100 ATS Score).
     *   **Classification**: Random Forest Classifier, Naive Bayes, SVM Classifier (predicting Pass/Fail decision).
-*   **Interactive Visual Analytics**: Interactive radar charts, word clouds, benchmarking scatter plots, and feature importance bar graphs.
-*   **Resume Improvement Suggestions**: Generates customized actionable bullets to improve candidate resumes.
-*   **Interactive Data Audit**: Audits job description keywords, showing matched and missing terms.
-*   **PDF Report Export**: Allows downloading a professional, styled 2-page evaluation PDF report generated via R's graphics engine.
+*   **Single Resume Screener**: Evaluates custom candidate PDFs or 1-click pre-packaged sample profiles (Senior Data Scientist, Senior DevOps Engineer, Full Stack Developer / SDE) with live target job preview cards.
+*   **Batch Candidate Screener**: Evaluates applicant pools in batch, generating a ranked candidate leaderboard with qualification decisions, pass ratios, and CSV export.
+*   **Job Openings Management**: Create, view, audit, and delete job openings directly from an interactive SQLite-backed directory.
+*   **Historical Evaluation Database**: Complete auditable log of past candidate evaluations with candidate detail modals, record deletion, and CSV database export.
+*   **Interactive Visual Analytics**: Radar competency maps, word clouds, benchmarking scatter plots, and feature importance bar graphs.
+*   **Resume Structure & Keyword Audit**: Keyword density profiles and structural quality audit checklists (word count, action verb strength, readability).
+*   **PDF Assessment Report Export**: Generates and downloads a formal 2-page candidate evaluation PDF report.
 
 ---
 
@@ -140,3 +143,27 @@ The system trains models and compares performance using standard evaluation metr
     *   *F1 Score*
 
 *Note: The Random Forest Regression model is used as the default predictor due to its superior $R^2$ and robust capability in handling non-linear combinations of engineered features.*
+
+---
+
+## Quality Assurance & Automated Testing
+
+The codebase has undergone a complete QA, Security, Accessibility (WCAG 2.2 AA), and Automated End-to-End Testing cycle with a **100% pass rate**.
+
+The complete technical report and root cause defect analyses are documented in:
+👉 [QA_TEST_REPORT.md](QA_TEST_REPORT.md)
+
+### Running Automated Test Suites
+
+1. **End-to-End Browser Tests (Playwright Chromium):**
+   ```bash
+   python scripts/test_e2e_playwright.py
+   ```
+   *Verifies all 8 tabs, single screener execution, competency radar plots, batch processing queues, job creation, and mobile/tablet/desktop responsive layouts.*
+
+2. **Backend R Integration Tests:**
+   ```bash
+   Rscript scripts/test_integration.R
+   ```
+   *Verifies PDF parsing across candidate profiles, Random Forest scoring, SQLite persistence, and formal PDF report generation.*
+

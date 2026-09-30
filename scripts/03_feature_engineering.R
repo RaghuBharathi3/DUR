@@ -249,25 +249,18 @@ extract_skills_and_certs <- function(text, skills_df, certs_df) {
   skills_df <- skills_df %>%
     mutate(skill_lower = tolower(skill))
   
+  # Helper function to build accurate regex pattern
+  build_skill_regex <- function(sk) {
+    if (sk == "r") return("\\b[rR]\\b")
+    esc <- stringr::str_escape(sk)
+    pfx <- if (grepl("^\\w", sk)) "\\b" else ""
+    sfx <- if (grepl("\\w$", sk)) "\\b" else "(?![a-zA-Z0-9])"
+    paste0(pfx, esc, sfx)
+  }
+
   # Match skills using exact boundaries where possible
   matched_skills <- sapply(skills_df$skill_lower, function(sk) {
-    # If the skill is an abbreviation (like R or C++ or C#), we need special word boundaries
-    if (sk == "r") {
-      # Match R with surrounding space or punctuation, but not inside words
-      pattern <- "\\b[rR]\\b"
-    } else if (sk == "c++") {
-      pattern <- "\\bc\\+\\+"
-    } else if (sk == "c#") {
-      pattern <- "\\bc\\#"
-    } else if (nchar(sk) <= 3) {
-      pattern <- paste0("\\b", sk, "\\b")
-    } else {
-      pattern <- paste0("\\b", sk, "\\b")
-    }
-    
-    # Clean regex patterns
-    pattern <- gsub("([+])", "\\\\\\1", pattern)
-    
+    pattern <- build_skill_regex(sk)
     str_detect(text_clean, pattern)
   })
   
@@ -282,14 +275,10 @@ extract_skills_and_certs <- function(text, skills_df, certs_df) {
     c_name <- certs_df$cert_lower[i]
     c_code <- certs_df$code_lower[i]
     
-    # Match by name or code
-    name_pat <- paste0("\\b", c_name, "\\b")
-    name_pat <- gsub("([+()\\-])", "\\\\\\1", name_pat)
+    name_pat <- paste0("\\b", stringr::str_escape(c_name), "\\b")
+    code_pat <- if (!is.na(c_code) && c_code != "") paste0("\\b", stringr::str_escape(c_code), "\\b") else ""
     
-    code_pat <- paste0("\\b", c_code, "\\b")
-    code_pat <- gsub("([+()\\-])", "\\\\\\1", code_pat)
-    
-    str_detect(text_clean, name_pat) || (!is.na(c_code) && c_code != "" && str_detect(text_clean, code_pat))
+    str_detect(text_clean, name_pat) || (code_pat != "" && str_detect(text_clean, code_pat))
   })
   
   detected_certs <- certs_df$certification[matched_certs]
@@ -307,8 +296,9 @@ extract_skills_and_certs <- function(text, skills_df, certs_df) {
   )
   
   for (cat in skill_summary$category) {
-    if (cat %in% names(skill_counts)) {
-      skill_counts[[cat]] <- skill_summary$count[skill_summary$category == cat]
+    target_cat <- if (cat == "Languages") "Programming" else cat
+    if (target_cat %in% names(skill_counts)) {
+      skill_counts[[target_cat]] <- skill_counts[[target_cat]] + skill_summary$count[skill_summary$category == cat]
     }
   }
   

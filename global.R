@@ -184,6 +184,38 @@ AWS Certified Solutions Architect - Professional.
     create_sample_resume_pdf(devops_resume_path, "Jane Smith", "Senior DevOps Engineer", devops_details)
   }
 
+  sde_resume_path <- file.path(resumes_dir, "sample_sde_fullstack.pdf")
+  if (!file.exists(sde_resume_path)) {
+    sde_details <- "## PROFESSIONAL SUMMARY
+Information Technology specialist with hands-on experience in full-stack development, RESTful API design, and database management using Java, Python, and SQL. Built and shipped projects spanning a payment-integrated web platform and a machine-learning-based intrusion detection service with a low-latency FastAPI backend. Interned at Zoho Corporation.
+
+## SKILLS
+* Languages: Java, C++, Python, SQL, TypeScript, HTML5, CSS3.
+* Backend & APIs: RESTful API Design, Microservices, Spring Boot, FastAPI, Node.js, Express.js.
+* Databases: PostgreSQL, MySQL, Supabase, RDBMS.
+* Frontend: React, Next.js, Tailwind CSS.
+* Cloud & Tools: AWS (EC2, S3), Microsoft Azure, Docker, Git, GitHub, Linux Shell, Postman.
+* Practices: SDLC, Agile/Scrum, Code Reviews, Unit Testing, Debugging.
+
+## EXPERIENCE
+* CRM Intern - Zoho Corporation (June 2025 - July 2025)
+- Automated core enterprise workflows across Zoho CRM and Zoho Books using custom scripts and API integrations.
+- Integrated RESTful Zoho CRM APIs for seamless data synchronization, ensuring low latency.
+- Participated in system design discussions and continuous process optimization.
+
+## PROJECTS
+* QuickLink - Full-Stack Web Application
+- Designed and developed a high-volume URL shortener and custom QR code generator with real-time analytics.
+- Architected relational database schemas in PostgreSQL and integrated Razorpay payment gateway.
+* IDS-ML - Intrusion Detection System (ML Backend)
+- Engineered an intrusion detection pipeline using Random Forest and Isolation Forest models.
+- Developed high-availability REST APIs with FastAPI and integrated SHAP for explainable AI.
+
+## EDUCATION
+* Bachelor of Technology in Information Technology - Rajalakshmi Engineering College (2023 - 2027)"
+    create_sample_resume_pdf(sde_resume_path, "Raghu Bharathi K P", "Full Stack Developer / SDE", sde_details)
+  }
+
   ds_jd_path <- file.path(jds_dir, "data_scientist_jd.txt")
   if (!file.exists(ds_jd_path)) {
     writeLines(

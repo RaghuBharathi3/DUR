@@ -137,19 +137,16 @@ extract_skills_from_jd <- function(clean_jd, skills_df) {
   skills_df <- skills_df %>%
     mutate(skill_lower = tolower(skill))
   
+  build_skill_regex <- function(sk) {
+    if (sk == "r") return("\\b[rR]\\b")
+    esc <- stringr::str_escape(sk)
+    pfx <- if (grepl("^\\w", sk)) "\\b" else ""
+    sfx <- if (grepl("\\w$", sk)) "\\b" else "(?![a-zA-Z0-9])"
+    paste0(pfx, esc, sfx)
+  }
+
   matched <- sapply(skills_df$skill_lower, function(sk) {
-    if (sk == "r") {
-      pattern <- "\\b[rR]\\b"
-    } else if (sk == "c++") {
-      pattern <- "\\bc\\+\\+"
-    } else if (sk == "c#") {
-      pattern <- "\\bc\\#"
-    } else if (nchar(sk) <= 3) {
-      pattern <- paste0("\\b", sk, "\\b")
-    } else {
-      pattern <- paste0("\\b", sk, "\\b")
-    }
-    pattern <- gsub("([+])", "\\\\\\1", pattern)
+    pattern <- build_skill_regex(sk)
     str_detect(clean_jd, pattern)
   })
   

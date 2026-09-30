@@ -174,7 +174,7 @@ get_job_descriptions <- function(db_path = "data/ats_analytics.sqlite") {
   if (!file.exists(db_path)) return(data.frame())
   con <- db_connect(db_path)
   on.exit(dbDisconnect(con))
-  dbGetQuery(con, "SELECT id, title, company, description, min_experience, created_at FROM job_descriptions ORDER BY id")
+  dbGetQuery(con, "SELECT id, title, company, description, min_experience, created_at FROM job_descriptions ORDER BY id DESC")
 }
 
 #' Add a job description to DB
@@ -215,6 +215,33 @@ delete_evaluation <- function(eval_id, db_path = "data/ats_analytics.sqlite") {
   con <- db_connect(db_path)
   on.exit(dbDisconnect(con))
   dbExecute(con, "DELETE FROM evaluations WHERE id = ?", params = list(eval_id))
+}
+
+#' Get single evaluation by ID
+#' @export
+get_evaluation_by_id <- function(eval_id, db_path = "data/ats_analytics.sqlite") {
+  if (!file.exists(db_path)) return(NULL)
+  con <- db_connect(db_path)
+  on.exit(dbDisconnect(con))
+  res <- dbGetQuery(con, "SELECT * FROM evaluations WHERE id = ?", params = list(eval_id))
+  if (nrow(res) == 0) return(NULL)
+  return(as.list(res[1, ]))
+}
+
+#' Delete a job description by ID
+#' @export
+delete_job_description <- function(jd_id, db_path = "data/ats_analytics.sqlite") {
+  con <- db_connect(db_path)
+  on.exit(dbDisconnect(con))
+  dbExecute(con, "DELETE FROM job_descriptions WHERE id = ?", params = list(jd_id))
+}
+
+#' Clear all candidate evaluation records
+#' @export
+clear_all_evaluations <- function(db_path = "data/ats_analytics.sqlite") {
+  con <- db_connect(db_path)
+  on.exit(dbDisconnect(con))
+  dbExecute(con, "DELETE FROM evaluations")
 }
 
 #' Seed built-in job descriptions
